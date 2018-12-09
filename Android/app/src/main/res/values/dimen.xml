@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Action Bar -->
+    <dimen name="acb_hgt">56dp</dimen>
+    <dimen name="acb_mg_bottom">20dp</dimen>
+    <dimen name="acb_mg_a">16dp</dimen>
+    <dimen name="acb_mg_b">24dp</dimen>
+    <dimen name="acb_mg_c">32dp</dimen>
+    <dimen name="acb_tvw_sz">20sp</dimen>
+    <dimen name="acb_elevacao">4dp</dimen>
+
+</resources>

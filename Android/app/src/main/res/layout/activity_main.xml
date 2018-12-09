@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -7,13 +7,76 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/acb_hgt"
+        android:layout_alignParentTop="true"
+        android:gravity="bottom"
+        android:elevation="@dimen/acb_elevacao">
 
-</android.support.constraint.ConstraintLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/acb_mg_c"
+            android:layout_marginStart="@dimen/acb_mg_c"
+            android:layout_marginBottom="@dimen/acb_mg_a"
+            android:text="@string/app_name"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/acb_tvw_sz"
+            app:fontFamily="@font/adamina" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/acb_mg_a"
+            android:layout_marginBottom="@dimen/acb_mg_a"
+            android:layout_marginRight="@dimen/acb_mg_a"
+            android:layout_marginEnd="@dimen/acb_mg_a">
+
+            <ImageButton
+                android:id="@+id/maAcbRecarregar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_reload"
+                android:background="@android:color/white"
+                android:layout_marginRight="@dimen/acb_mg_b"
+                android:layout_marginEnd="@dimen/acb_mg_b"
+                android:contentDescription="TODO" />
+
+            <ImageButton
+                android:id="@+id/maAcbConfigurar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_config"
+                android:background="@android:color/white"
+                android:contentDescription="TODO" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/maSemLog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/acb_hgt"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:text="@string/SemLogMsg"
+        android:textStyle="bold" />
+
+
+    <ListView
+        android:id="@+id/maPrevisaoDoTempo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/acb_hgt"
+        android:background="@android:color/white"
+        android:gravity="center" />
+
+</RelativeLayout>

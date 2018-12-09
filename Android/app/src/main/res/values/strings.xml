@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Android</string>
+    <string name="SemLogMsg">Clique Em Configurações para configurar o app \n  ou clique e atualizar</string>
 </resources>
